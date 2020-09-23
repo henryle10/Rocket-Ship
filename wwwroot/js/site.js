@@ -38,21 +38,51 @@ $(document).ready(function () {
     //     }
     // })
 
-    $j3(".rd1").click(function(e){
-        $j3(".rd1flip").click();
+    $j3(".rd1").click(function(){
+        $j3(this).closest(".rd1flip").click();
     });
-    $j3(".rd2").click(function(e){
-        $j3(".rd2flip").click();
+    $j3(".rd2").click(function(){
+        $j3(this).closest(".rd2flip").click();
     });
-    $j3(".rd3").click(function(e){
-        $j3(".rd3flip").click();
+    $j3(".rd3").click(function(){
+        $j3(this).closest(".rd3flip").click();
     });
-    $j3(".rd4").click(function(e){
-        $j3(".rd4flip").click();
+    $j3(".rd4").click(function(){
+        $j3(this).closest(".rd4flip").click();
     });
 
     $j2('.flipper').flip();
 
+
+// $j(document).on("submit", "form", function (event) {
+//     var form = $(this);
+
+//     if (form.valid()) {
+//         $.ajax({
+//             url: this.action, 
+//             type: this.method,
+//             data: $(this).serialize(),
+//             success: function (html) {
+//                 // Do something with the returned html.
+//             }
+//         });
+//     }
+
+//     event.preventDefault();
+// });
+
+    // $j3('#smoke-btn').submit(function (e) {
+    //     e.preventDefault();
+    //     var form = $(this);
+    //     $.ajax({
+    //         type: form.attr('method'),
+    //         url: form.attr('action'),
+    //         data: form.serialize(),
+    //         success: function (data) {
+    //                 console.log(data);
+    //         }
+    //     });
+    //     });
 
     // $('.p1rd1').click(function () {
     //     $(".p1cd1").hide();
